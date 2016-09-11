@@ -15,6 +15,7 @@ and open the template in the editor.
 
         $students = array();
         
+        //first student
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -25,6 +26,7 @@ and open the template in the editor.
         $first->add_grade(55);
         $students['j123'] = $first;
         
+        //second student
         $second = new Student();
         $second->surname = "Einstein";
         $second->first_name = "Albert";
@@ -36,6 +38,7 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
         
+        //third student
         $third = new Student();
         $third->surname = "Yu";
         $third->first_name = "Lingzhu";
