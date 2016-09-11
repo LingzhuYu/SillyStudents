@@ -50,9 +50,17 @@ and open the template in the editor.
         $students['y012'] = $third;
         
         ksort($students); // one of the many sort functions
-
-        foreach ($students as $student)
-            echo $student->toString();
+        
         ?>
+        <table>
+            <?php
+            $n = 1;
+            foreach ($students as $student){
+                echo "<tr><td>" . $n . "</td><td></td></tr>";
+                echo $student->toString();
+                $n++;
+            }
+            ?>
+        </table>
     </body>
 </html>
