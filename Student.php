@@ -41,12 +41,11 @@ class Student {
 
     /* Print result(student name, grade, email) */
     function toString() {
-        $result = $this->first_name . ' ' . $this->surname;
-        $result .= ' (' . $this->average() . ")\n";
+        $result = "<tr><td>" . $this->first_name . ' ' . $this->surname . "</td>";
+        $result .= "<td>(" . $this->average() . ")</td></tr>";
         foreach ($this->emails as $which => $what)
-            $result .= $which . ': ' . $what . "\n";
-        $result .= "\n";
-        return '<pre>' . $result . '</pre>';
+            $result .= "<tr><td>" . $which . "</td><td>" . $what . "</td></tr>";
+        return $result;
     }
 
 }
